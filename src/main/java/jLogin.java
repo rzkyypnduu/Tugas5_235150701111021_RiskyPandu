@@ -210,7 +210,7 @@ public class jLogin extends javax.swing.JFrame {
        if (response == JOptionPane.OK_OPTION) {
         // Menampilkan data
         String message = String.format(
-            "Nama\t: %s\nTanggal\t: %s\nPendaftaran\t: %s\nNo\t: %s\nAlamat\t: %s\nEmail\t: %s", 
+            "Nama Lengkap\t\t: %s\nTanggal Lahir\t\t: %s\nNomor Pendaftaran\t: %s\nNo Telp\t\t: %s\nAlamat\t\t: %s\nE-mail\t\t: %s", 
             a, b, c, d, e, f
         );
             new jTampilan(message).setVisible(true);
