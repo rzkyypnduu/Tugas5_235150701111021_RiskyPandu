@@ -206,16 +206,16 @@ public class jLogin extends javax.swing.JFrame {
         }
     
         // Confirm submission
-        int response = JOptionPane.showConfirmDialog(null, "Apakah anda yakin data yang Anda isi sudah benar?", "Konfirmasi", JOptionPane.OK_CANCEL_OPTION);
-        if (response == JOptionPane.OK_OPTION) {
-            // Display the data
-            String massage = String.format(
-                "Nama: %s\nTanggal: %s\nPendaftaran: %d\nNo: %d\nAlamat: %s\nEmail: %s", 
-                a, b, c, d, e, f
-            );
-            new jTampilan(massage).setVisible(true);
-            //JOptionPane.showMessageDialog(null, massage, "Data Anda", JOptionPane.INFORMATION_MESSAGE);
-            }
+       int response = JOptionPane.showConfirmDialog(null, "Apakah Anda yakin data yang Anda isi sudah benar?", "Konfirmasi", JOptionPane.OK_CANCEL_OPTION);
+       if (response == JOptionPane.OK_OPTION) {
+        // Menampilkan data
+        String message = String.format(
+            "Nama\t: %s\nTanggal\t: %s\nPendaftaran\t: %s\nNo\t: %s\nAlamat\t: %s\nEmail\t: %s", 
+            a, b, c, d, e, f
+        );
+            new jTampilan(message).setVisible(true);
+        //JOptionPane.showMessageDialog(null, message, "Data Anda", JOptionPane.INFORMATION_MESSAGE);
+    }
        
     }//GEN-LAST:event_JButton1ActionPerformed
 
