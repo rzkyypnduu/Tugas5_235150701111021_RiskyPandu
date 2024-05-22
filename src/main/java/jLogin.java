@@ -194,25 +194,14 @@ public class jLogin extends javax.swing.JFrame {
         
         String a = jNama.getText();
         String b = jTanggal.getText();
-        String cStr = jPendaftaran.getText(); // Menggunakan string sementara untuk validasi
-        String dStr = jNo.getText(); // Menggunakan string sementara untuk validasi
+        String c = jPendaftaran.getText(); 
+        String d = jNo.getText(); 
         String e = jAlamat.getText();
         String f = jEmail.getText();
     
         // Validate that all fields are filled
-        if (a.isEmpty() || b.isEmpty() || cStr.isEmpty() || dStr.isEmpty() || e.isEmpty() || f.isEmpty()) {
+        if (a.isEmpty() || b.isEmpty() || c.isEmpty() || d.isEmpty() || e.isEmpty() || f.isEmpty()) {
             JOptionPane.showMessageDialog(null, "Semua kolom harus diisi!", "Error", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-
-        int c = 0;
-        int d = 0;
-
-        try {
-            c = Integer.parseInt(cStr); // Mengonversi string ke integer
-            d = Integer.parseInt(dStr); // Mengonversi string ke integer
-        } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(null, "Kolom pendaftaran dan nomor harus diisi dengan angka!", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
     
